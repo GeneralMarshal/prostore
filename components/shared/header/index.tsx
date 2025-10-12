@@ -1,9 +1,6 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { APP_NAME } from "@/lib/constants";
-import { ShoppingCartIcon, User } from "lucide-react";
-import ModeToggle from "./mode-toggle";
 import Menu from "./menu";
 
 const Header = () => {
@@ -37,7 +34,7 @@ const Header = () => {
             </Link>
           </Button>
         </div> */}
-        <Menu/>
+        <Menu />
       </div>
     </header>
   );

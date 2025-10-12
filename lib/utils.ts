@@ -8,7 +8,6 @@ export function cn(...inputs: ClassValue[]) {
 export function convertToPlainObject<T>(value: T): T {
   return JSON.parse(JSON.stringify(value))
 }
-
 //format number with decimal places
 export function formatNumberWithDecimal(num: number): string{
   const [int, decimal] = num.toString().split(".");

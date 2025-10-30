@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import Header from "@/components/shared/header";
 import Footer  from "@/components/footer";
+import { APP_NAME } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: { default: "Home", template: `%s | ${APP_NAME}`}
 };
 
 export default function RootLayout({
